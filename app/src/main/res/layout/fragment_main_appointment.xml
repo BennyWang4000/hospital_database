@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/main_appointment_textview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="掛號查詢"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.1"/>
+
+
+    <TextView
+        android:id="@+id/main_appointment_textview_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="病歷號"
+        app:layout_constraintBottom_toTopOf="@id/main_appointment_edittext_id"
+        app:layout_constraintStart_toStartOf="@id/main_appointment_edittext_id" />
+
+    <EditText
+        android:id="@+id/main_appointment_edittext_id"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/main_appointment_textview_day"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="出生年月日"-->
+<!--        app:layout_constraintStart_toStartOf="@id/main_appointment_layout_edit"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/main_appointment_layout_edit"/>-->
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/main_appointment_layout_edit"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/main_appointment_edittext_id"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.15"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent">-->
+<!--        <EditText-->
+<!--            android:id="@+id/main_appointment_edittext_year"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toStartOf="@id/main_appointment_edittext_month"/>-->
+<!--        <EditText-->
+<!--            android:id="@+id/main_appointment_edittext_month"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintStart_toEndOf="@id/main_appointment_edittext_year"-->
+<!--            app:layout_constraintEnd_toStartOf="@id/main_appointment_edittext_day"/>-->
+<!--        <EditText-->
+<!--            android:id="@+id/main_appointment_edittext_day"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toEndOf="@id/main_appointment_edittext_month"/>-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <Button
+        android:id="@+id/main_appointment_btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEARCH"
+        app:layout_constraintTop_toBottomOf="@id/main_appointment_edittext_id"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
